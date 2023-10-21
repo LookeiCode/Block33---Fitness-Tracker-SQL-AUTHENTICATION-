@@ -15,7 +15,7 @@
 // const createDB = async () => {
 //     try {
 //         await pool.query(`
-//         CREATE DATABASE one_to_one
+//         CREATE DATABASE one_to_many
 //         `);
 //     } catch (error) {
 //         console.error(error, 'Error creating database')
