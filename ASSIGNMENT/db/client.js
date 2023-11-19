@@ -1,6 +1,6 @@
 const { Client } = require('pg');
 
-const connectionString = process.env.DATABASE_URL || 'https://localhost:5432/fitness-dev';
+const connectionString = process.env.DATABASE_URL || "postgresql://postgres:$hadow10510@localhost:8008/fitness-dev?schemapublic"
 
 const client = new Client({
   connectionString,
