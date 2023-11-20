@@ -16,6 +16,16 @@ router.get('/', async (req, res, next) => {
   }
 })
 
+router.get('/:routineId', async (req, res, next) => {
+  try {
+    const {routineId} = req.params;
+    const existingRoutine = await getRoutineById(routineId);
+    res.send(existingRoutine);
+  } catch (error) {
+    next(error);
+  }
+});
+
 // POST /api/routines
 router.post('/', requireUser, requiredNotSent({requiredParams: ['name', 'goal']}), async (req, res, next) => {
   try {

@@ -30,6 +30,16 @@ router.get('/', async (req, res, next) => {
   }
 })
 
+router.get('/:activityId', async (req, res, next) => {
+  try {
+    const {activityId} = req.params;
+    const existingActivity = await getActivityById(activityId);
+    res.send(existingActivity);
+  } catch (error) {
+    next(error);
+  }
+});
+
 // POST /api/activities
 router.post('/', requireUser, requiredNotSent({requiredParams: ['name', 'description']}), async (req, res, next) => {
   try {
