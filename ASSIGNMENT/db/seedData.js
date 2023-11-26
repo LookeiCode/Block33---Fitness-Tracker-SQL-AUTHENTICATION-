@@ -220,3 +220,69 @@ async function rebuildDB() {
 module.exports = {
   rebuildDB
 };
+
+
+
+// {
+//   creatorId: 1,
+//   routineId: bicepRoutine.id,
+//   activityId: bicep1.id,
+//   count: 10,
+//   duration: 5 
+// },
+// {
+//   creatorId: 2,
+//   routineId: bicepRoutine.id,
+//   activityId: bicep2.id,
+//   count: 10,
+//   duration: 8 
+// },
+// {
+//   creatorId: 1,
+//   routineId: chestRoutine.id,
+//   activityId: chest1.id,
+//   count: 10,
+//   duration: 8 
+// },
+// {
+//   creatorId: 1,
+//   routineId: chestRoutine.id,
+//   activityId: chest2.id,
+//   count: 10,
+//   duration: 7 
+// },
+// {
+//   creatorId: 4,
+//   routineId: legRoutine.id,
+//   activityId: leg1.id,
+//   count: 10,
+//   duration: 9 
+// },
+// {
+//   creatorId: 5,
+//   creatorId: 1,
+//   routineId: legRoutine.id,
+//   activityId: leg2.id,
+//   count: 10,
+//   duration: 10 
+// },
+// {creatorId: 5,
+//   routineId: legRoutine.id,
+//   activityId: leg3.id,
+//   count: 10,
+//   duration: 7 
+// },
+// {
+//   creatorId: 1,
+//   routineId: cardioRoutine.id,
+//   activityId: leg2.id,
+//   count: 10,
+//   duration: 10 
+// },
+// {
+//   creatorId: 1,
+//   routineId: cardioRoutine.id,
+//   activityId: leg3.id,
+//   count: 10,
+//   duration: 15 
+// },

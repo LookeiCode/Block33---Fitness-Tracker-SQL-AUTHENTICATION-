@@ -58,7 +58,7 @@ async function getPublicRoutinesByUser({username}) {
     SELECT routines.*, users.username AS "creatorName"
     FROM routines
     JOIN users ON routines."creatorId" = users.id 
-    WHERE "creatorId" = $1
+    WHERE "creatorId" = $1 
     AND "isPublic" = true
     `, [user.id]);
     return attachActivitiesToRoutines(routines);

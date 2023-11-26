@@ -56,6 +56,8 @@ You will need to configure authorization in Postman to test this route. After au
 
 ### Problem 5: PATCH one by ID
 
+- Route is not specified. Also, routine_activities does not have a creatorId in the DB.  <--------
+
 In this exercise, you will update a record using Postman. There should be no errors if your code is correct.
 
 ### Problem 6: DELETE one by ID

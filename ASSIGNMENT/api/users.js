@@ -24,8 +24,9 @@ router.post('/login', async (req, res, next) => {
         name: 'IncorrectCredentialsError',
         message: 'Username or password is incorrect',
       })
-    } else {
-      const token = jwt.sign({id: user.id, username: user.username}, JWT_SECRET, { expiresIn: '1w' });
+    } else { 
+      const userInfo = {id: user.id, username: user.username}
+      const token = jwt.sign(userInfo, JWT_SECRET, { expiresIn: '1w' });
       res.send({ user, message: "you're logged in!", token });
     }
   } catch (error) {

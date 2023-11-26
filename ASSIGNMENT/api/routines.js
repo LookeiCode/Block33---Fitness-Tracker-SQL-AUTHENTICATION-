@@ -31,8 +31,8 @@ router.post('/', requireUser, requiredNotSent({requiredParams: ['name', 'goal']}
   try {
     const {name, goal} = req.body;
     const createdRoutine = await createRoutine({creatorId: req.user.id, name, goal, isPublic: req.body.isPublic});
-    if(createdRoutine) {
-      res.send(createdRoutine);
+    if(createdRoutine) { 
+      res.send(createdRoutine); 
     } else {
       next({
         name: 'FailedToCreate',
